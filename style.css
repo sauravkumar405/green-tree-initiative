@@ -1,0 +1,286 @@
+@import url("https://p.typekit.net/p.css?s=1&k=wvl2kgf&ht=tk&f=18085&a=84797321&app=typekit&e=css");
+
+@font-face {
+  font-family: "flood-std";
+  src: url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+*{
+    margin:0px;
+}
+
+
+/* COMMON */
+
+#header1{
+    text-align: left;
+font: normal normal bold 22px/28px Helvetica;
+letter-spacing: 0px;
+color: #354463;
+opacity: 1;
+}
+
+.nav-links{
+    font: normal normal 300 16px/24px Helvetica;
+letter-spacing: -0.16px;
+color: #354463;
+opacity: 1;
+}
+
+
+header  button{
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+
+    text-align: center;
+    font: normal normal bold 18px/22px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+    box-shadow: none;
+}
+
+
+#sec1{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('image1.png');
+    
+}
+#the-issue{
+    width:160px;
+    height:40px;
+    background-color: #354463;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+#p1{
+    text-align: left;
+    font: normal normal bold 20px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+}
+#p2{
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal 300 16px/24px Helvetica;
+    letter-spacing: -0.16px;
+    color: #354463;
+    opacity: 1;
+}
+
+#sec11{
+    font-family: flood-std;
+    font-size: 50px;
+    grid-row: 2/3;
+    color:white;
+}
+#sec12{
+    background-color: white;
+    grid-row:2/3;
+}
+
+
+
+
+/* DESKTOP */
+@media (min-width:800px){
+    header{
+        display:grid;
+        grid-template-columns: 30% repeat(3, 15%) 25%;
+        grid-template-rows: 1fr;
+        padding-top: 10px;
+    }
+    header div{
+        margin:auto;
+    }
+    header button{
+        height:48px;
+        width:160px;
+    }
+    
+    #sec11{
+        order:2;
+        justify-self: center;
+    }
+    #sec12{
+        height:416px;
+        width:544px;
+        justify-self: center;
+        border-radius: 2px;
+        /* padding:0px; */
+        /* position:relative; */
+        
+    }
+    #sec1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    height:672px;
+    
+    }
+    #p1{
+        text-align: left;
+        font: normal normal bold 44px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+
+    /* SECTION2 */
+    #sec2{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        padding:50px 100px;
+        column-gap: 20px;
+        background-color: #C1F7D5;
+        
+    }
+    .sec2 h4{
+        text-align: left;
+        font: normal normal bold 28px/36px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+
+    .sec2 p{
+        text-align: left;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+    }
+    
+
+}
+
+
+/* MOBILE */
+@media (max-width:450px){
+    header{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        padding:10px;
+    }
+    #header1{
+        grid-row:1/4 ;
+    }
+    #header5{
+        grid-column: 1/-1;
+        margin:auto;
+    }
+    header button{
+        width:300px;
+        height:35px;
+    }
+    #sec1{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding:30px;
+        row-gap: 20px;
+    }
+    #sec11{
+        grid-row:1/2;
+    }
+
+    #sec2{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        background-color: #C1F7D5;
+        row-gap: 20px;
+        column-gap: 25px;
+        padding:30px;
+    }
+    .sec2 h4{
+        text-align: left;
+        font: normal normal bold 28px/36px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+
+    .sec2 p{
+        text-align: left;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+    }
+
+}
+
+/* TABLET */
+@media (min-width:451px) and (max-width:799px){
+    header{
+        grid-template-columns: 20% 20% 20% 40%;
+        grid-template-rows: 80% 20%;
+        padding:15px;
+        height:100px;
+
+        
+    }
+    
+    #header1{
+        grid-column:1/4;
+        /* grid-row:-1/-2; */
+    }
+    #header2{
+        grid-column: 1/2;
+        /* grid-row:-1/-2; */
+
+    }
+    #header3{
+        grid-column:2/3;
+        /* grid-row:-1/-2; */
+    }
+    #header4{
+        grid-column:3/4;
+        /* grid-row:-1/-2; */
+        width:150px;
+    }
+    #header5{
+        grid-column: -2/-1;
+        grid-row:1/2;
+        margin:auto;
+    }
+    header button{
+        height:48px;
+        width:140px;
+    }
+    #sec2{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        background-color: #C1F7D5;
+        row-gap: 20px;
+        column-gap: 25px;
+        padding:30px;
+    }
+    .sec2 h4{
+        text-align: left;
+        font: normal normal bold 28px/36px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+
+    .sec2 p{
+        text-align: left;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+    }
+}
