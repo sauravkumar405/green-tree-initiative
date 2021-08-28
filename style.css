@@ -159,8 +159,75 @@ header  button{
         color: #354463;
         opacity: 1;
     }
-    
+    #sec3{
+        background-color: #354463;
+        padding:60px;
+    }
+    #sec31{
+        width:160px;
+        height:40px;
+        background-color: #f6f6f6;
+        padding:auto;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    #sec32{
+        font: normal normal bold 30px Helvetica;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    #sec33{
+        display:flex;
+        justify-content: space-between;
+    }
+    .cards{
+        background-color: #f6f6f6;
+        width:320px;
+        position: relative;
 
+    }
+    .temp-img{
+        height:224px;
+        width:100%;
+    }
+    .cards-img{
+        height:224px;
+        width:100%;
+        background-color: black;
+        position: absolute;
+        right:-30px;
+        top:-30px;
+    }
+    .cards-heading{
+        text-align: left;
+        font: normal normal bold 28px/36px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .cards-para{
+        text-align: left;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 30px;
+    }
+    .cards button{
+        height:;
+        width:;
+        background-color: ;
+        color: black;
+        border-radius:100px ;
+    }
 }
 
 
@@ -218,6 +285,69 @@ header  button{
         color: #354463;
         opacity: 1;
     }
+    #sec3{
+        background-color: #354463;
+        padding:30px 20px;
+    }
+    #sec31{
+        width:160px;
+        height:40px;
+        background-color: #f6f6f6;
+        text-align: center;
+        margin:auto;
+        font: normal normal normal 14px/17px Helvetica;
+        letter-spacing: 0.56px;
+        color: #354463;
+        opacity: 1;
+        margin:20px auto;
+    }
+    #sec32{
+        text-align: center;
+        font: normal normal bold 22px/28px Helvetica;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:auto;
+        margin: 10px auto;
+    }
+    .cards{
+        background-color: #f6f6f6;
+        margin:80px auto;
+
+    }
+    .temp-img{
+        height: 176px;
+    }
+    .cards-heading{
+        text-align: center;
+        font: normal normal bold 18px/22px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+        padding:20px;
+    }
+    .cards-para{
+        text-align: center;
+        font: normal normal 300 14px/20px Helvetica;
+        letter-spacing: -0.14px;
+        color: #354463;
+        opacity: 1;
+        padding:20px;
+    }
+
+    .cards Button{
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 100px;
+        opacity: 1;
+        width:152px;
+        height:40px;
+        font: normal normal bold 16px/20px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        margin:0px auto;
+        display:block;
+    }
+
 
 }
 
@@ -228,8 +358,6 @@ header  button{
         grid-template-rows: 80% 20%;
         padding:15px;
         height:100px;
-
-        
     }
     
     #header1{
@@ -282,5 +410,91 @@ header  button{
         letter-spacing: -0.16px;
         color: #354463;
         opacity: 1;
+    }
+
+
+    /* SECTION3 */
+    #sec3{
+        background-color: #354463;
+        padding: 50px;
+    }
+    #sec31{
+        width:160px;
+        height:40px;
+        background-color: #f6f6f6;
+        padding:auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #sec32{
+        font: normal normal bold 30px Helvetica;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    #sec33{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cards{
+        background-color: #f6f6f6;
+        height:auto;
+        position: relative;
+        display:grid;
+        grid-template-columns:  55% 45%;
+        grid-template-rows: repeat(3, 33%);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        width:auto;
+    }
+    .temp-img{
+        width:228px;
+        grid-column: 1/2;
+        grid-row:1/-1;
+    }
+    .cards-img{
+        
+        width:288px;
+        height:201px;
+        background-color: black;
+        position: absolute;
+        left:20px;
+        top:-40px;
+    }
+    .cards-heading{
+        text-align: left;
+        font: normal normal bold 28px/36px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+        padding:10px;
+        /* border: black 2px solid; */
+        
+    }
+    .cards-para{
+        text-align: left;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+        padding:10px;
+        grid-row: 2/-1;
+        /* border:black 5px solid; */
+        /* display: inline; */
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 30px; */
+    }
+    .cards button{
+        height:40px;
+        width:156px;
+        background-color: #C1F7D5;
+        color: black;
+        border-radius:100px;
+        grid-area: 3/1/-1/2;
+        justify-self: center;
     }
 }
