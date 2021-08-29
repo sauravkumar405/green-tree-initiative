@@ -12,83 +12,6 @@
     margin:0px;
 }
 
-
-/* COMMON */
-
-#header1{
-    text-align: left;
-font: normal normal bold 22px/28px Helvetica;
-letter-spacing: 0px;
-color: #354463;
-opacity: 1;
-}
-
-.nav-links{
-    font: normal normal 300 16px/24px Helvetica;
-letter-spacing: -0.16px;
-color: #354463;
-opacity: 1;
-}
-
-
-header  button{
-    background: #C1F7D5 0% 0% no-repeat padding-box;
-    border-radius: 100px;
-    opacity: 1;
-
-    text-align: center;
-    font: normal normal bold 18px/22px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-    box-shadow: none;
-}
-
-
-#sec1{
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('image1.png');
-}
-#the-issue{
-    width:160px;
-    height:40px;
-    background-color: #354463;
-    color: white;
-    text-align: center;
-    margin: auto;
-}
-#p1{
-    text-align: left;
-    font: normal normal bold 20px Helvetica;
-    letter-spacing: 0px;
-    color: #354463;
-    opacity: 1;
-}
-#p2{
-    text-align: left;
-    text-decoration: underline;
-    font: normal normal 300 16px/24px Helvetica;
-    letter-spacing: -0.16px;
-    color: #354463;
-    opacity: 1;
-}
-
-#sec11{
-    font-family: flood-std;
-    font-size: 50px;
-    grid-row: 2/3;
-    color:white;
-}
-#sec12{
-    background-color: white;
-    grid-row:2/3;
-}
-
-
-
-
 /* DESKTOP */
 @media (min-width:800px){
     header{
@@ -236,10 +159,39 @@ header  button{
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 1fr);
-        padding:10px;
+        padding:15px;
+        column-gap: 5px;
+        padding-bottom: 0px;
     }
     #header1{
         grid-row:1/4 ;
+        text-align: left;
+        font: normal normal bold 22px/28px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+    .nav-links{
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
+    }
+
+    #p1{
+        text-align: left;
+        font: normal normal bold 20px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
+        opacity: 1;
+    }
+    #p2{
+        text-align: left;
+        text-decoration: underline;
+        font: normal normal 300 16px/24px Helvetica;
+        letter-spacing: -0.16px;
+        color: #354463;
+        opacity: 1;
     }
     #header5{
         grid-column: 1/-1;
@@ -248,22 +200,48 @@ header  button{
     header button{
         width:300px;
         height:35px;
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 100px;
+        opacity: 1;
+        text-align: center;
+        font: normal normal bold 18px/22px Helvetica;
+        letter-spacing: 0px;
+        color: #354463;
     }
     #sec1{
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         padding:20px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('image1.png');
     }
     #sec11{
         grid-row:1/2;
+        font-family: flood-std;
+        font-size: 50px;
+        color:white;
     }
     #sec12{
-        margin: 20px auto;
+        margin: 10px auto;
         padding:20px;
+        background-color: white;
+        grid-row:2/3;
+    }
+    
+
+    #the-issue{
+        width:160px;
+        height:40px;
+        background-color: #354463;
+        color: white;
+        text-align: center;
+        margin: auto;
     }
     #p1{
-        padding:10px;
+        padding:10px 0px;
     }
 
 
