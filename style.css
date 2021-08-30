@@ -337,9 +337,7 @@
         display:grid;
         grid-template-columns: 50% 60%;
         grid-template-rows: 95% 5%;
-        position: relative;
-        row-gap:30px;
-        /* column-gap: 0px; */
+        row-gap: 30px;
     }
     #sec51{
         grid-area:1/-2/-1/-1;
@@ -356,6 +354,9 @@
         height: 300px;
         width:auto;
         padding:30px;
+        margin-top:20px;
+        position: relative;
+        left:8%;
     }
     #sec521{
         text-align: left;
@@ -386,6 +387,8 @@
         width:156px;
         align-self:flex-end;
         grid-area: 2/1/-1/2;
+        position: relative;
+        left:8%;
 
     }
     #stories{
@@ -408,7 +411,71 @@
 
     /* SECTION 6 */
 
+    #sec6{
+        padding:100px;
+        background-color: #354463;
+    }
+    #sec61{
+        text-align: left;
+        font: normal normal normal 72px/76px Flood-Std;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin:30px auto;
+    }
+    #sec62{
+        margin:50px auto;
+    }
+    .event{
+        display:grid;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        height:450px;
+    }
+    .event-img{
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('home/tree-planting.png');
+        /* height:500px; */
+        /* width: 500px; */
+        grid-area:1/1/-1/2;
+        /* width:auto; */
 
+    }
+    .event-heading{
+        text-align: left;
+        font: normal normal bold 44px/56px Helvetica;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .event-para{
+        text-align: left;
+        font: normal normal 300 20px/32px Helvetica;
+        letter-spacing: -0.4px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    #sec62 button{
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 100px;
+        opacity: 1;
+        width:160px;
+        height:40px;
+        margin:auto 0px;
+        align-self:center;
+    }
+    #sec63 button{
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 100px;
+        opacity: 1;
+        width:160px;
+        height:40px;
+        /* margin:auto 0px; */
+        align-self:center;
+    }
 
 
     /* SECTION 7 */
@@ -472,6 +539,7 @@
         opacity: 1;
         padding-bottom: 5px;
         border-bottom: 2px solid #354463;
+        margin-bottom: 10px;
     }
     .contact-info a{
         text-align: left;
@@ -1024,7 +1092,6 @@
         color: #354463;
         opacity: 1;
         display:block;
-
     }
     .contact-info ul{
         display:inline-block;
