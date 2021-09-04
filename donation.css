@@ -13,126 +13,137 @@
   font-style: normal;
   font-weight: 400;
 }
-@media (min-width:800px){
-.body {
-    display: grid;
-    grid-column: 1fr;
-    grid-row: 100px 8fr 2fr;
-    /* background-color:black; */
-}
 
-.header {
+body{
+    margin:0px;
+}
+header {
     width: 100%;
     text-align: center;
     font: normal normal bold 22px/28px Helvetica;
     color: #354463;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: white;
 }
 
-.main {
+main {
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* opacity: 0.63; */
     background-size: cover;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-image: url(); */
-    background-image: url('https://drive.google.com/file/d/1-ILfv9oWhTAUI0ZrnBZ7E6EPXlzaFKpR/view?usp=sharing');
-    /* background-image: url('/home/saurabh/Desktop/webpages/mobile_donation/image.png'); */
     background-image: url('image.png');
-    /* background-color: aquamarine; */
-    padding-top: 50px;
+    padding-top:50px;
     padding-bottom: 50px;
 }
+
 
 .phrase {
     font-size: 60px;
     font-family: 'Rock Salt', cursive;
     font-family: flood-std;
-    color: black;
+    color: white;
     order: 2;
-    /* justify-self: flex-end; */
-    
+    width: 33%;
 }
 
-label {
+.form-division{
+    width: 35%;
+    padding:50px;
+    background-color: #354463;
+}
+
+.form-division p{
+    text-align: left;
+    font: normal normal bold 22px/30px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    }
+
+.information-label{
     display: block;
     text-align: left;
-    font: normal normal normal 14px/17px Helvetica;
     letter-spacing: 0.56px;
     color: #FFFFFF;
     opacity: 1;
+    margin: 20px 0px;
 }
 
-.form {
-    background-color: #354463;
-    width: 500px;
-    padding: 30px;
-    /* justify-self: flex-start; */
-}
-
-.form>h3 {
-    color: white;
+.information-label label{
     text-align: left;
-    font: normal normal bold 26px/34px Helvetica;
-    letter-spacing: 0px;
+    font: normal normal normal 12px Helvetica;
+    letter-spacing: 0.44px;
     color: #FFFFFF;
-    opacity: 1
+    opacity: 1;
+    display: block;
 }
 
-input {
+.information-label input{
     border: none;
-    border-bottom: #C1F7D5 2px solid;
     background-color: #354463;
+    text-align: left;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    margin:5px 0px;
+    border-bottom: 2px #C1F7D5 solid;
+    width:100%;
+}
+.first-name{
+    width:45%;
+}
+.last-name{
+    width:45%;
 }
 
-.form #first-form {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 1em;
+.horizontal-field{
+    display: flex;
+    padding:0px;
+    justify-content: space-between;
 }
-
-#first-form>div {
-    padding: 5px;
+.city{
+    width: 45%;
 }
-
-#second-form>div {
-    padding: 5px;
+.state{
+    width:20%;
 }
-
-#ff3 {
-    width: 100%
+.zip-code{
+    width: 20%;
 }
-
-.ff2 {
-    grid-column: 2/4;
+.expiry-date{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    width: 45%;
 }
-
-.ff3 {
-    grid-column: 1/-1;
+.expiry-date input{
+    width:40%;
 }
-
-.ff7 {
-    grid-column: 1/-1;
+.security-code{
+    width:45%
 }
-
-button {
+.form-button{
+    margin:20px 0px;
+    margin-bottom: 0px;
+}
+.form-button button{
+    display: block;
+    margin: auto;
+    margin-right: 0px;
     height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: #C1F7D5;
-    color: black;
-    margin-top: 20px;
-    margin-left: 275px;
+    width:160px;
+    border-radius: 100px;
+    background-color:#C1F7D5;
+    text-align: center;
+    font: normal normal bold 15px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
 }
 
-.footer {
+footer {
     background-color: white;
     height: 250px;
     display: grid;
@@ -140,7 +151,7 @@ button {
     grid-template-rows: 1fr;
 }
 
-#footer1 {
+.footer-headline {
     text-align: left;
     font: normal normal bold 22px/28px Helvetica;
     letter-spacing: 0px;
@@ -151,16 +162,16 @@ button {
 }
 
 
-#footer2 {
+.footer-contact {
     padding: 16px;
     padding-top: 50px;
 }
-#footer3 {
+.footer-links {
     padding: 16px;
     padding-top: 50px;
 }
 
-#footer4 {
+.footer-social-links {
     padding: 16px;
     padding-top: 50px;
 }
@@ -184,374 +195,292 @@ footer p{
     opacity: 1;
 }
 
-#footer5 {
+.footer-phrase{
     text-align: right;
+    font-family: flood-std;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width:1025px){
+main {
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('image.png');
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+
+.phrase {
+    font-size: 60px;
     font-family: 'Rock Salt', cursive;
+    font-family: flood-std;
+    color: white;
+    order: 2;
+    width: 33%;
+}
+
+.form-division{
+    width: 35%;
+    padding:50px;
+    background-color: #354463;
+}
+
+.form-division p{
+    text-align: left;
+    font: normal normal bold 22px/30px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    }
+
+.information-label{
+    display: block;
+    text-align: left;
+    letter-spacing: 0.56px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 20px 0px;
+}
+
+.information-label label{
+    text-align: left;
+    font: normal normal normal 12px Helvetica;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+    opacity: 1;
+    display: block;
+}
+
+.information-label input{
+    border: none;
+    background-color: #354463;
+    text-align: left;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    margin:5px 0px;
+    border-bottom: 2px #C1F7D5 solid;
+    width:100%;
+}
+.first-name{
+    width:45%;
+}
+.last-name{
+    width:45%;
+}
+
+.horizontal-field{
+    display: flex;
+    padding:0px;
+    justify-content: space-between;
+}
+.city{
+    width: 45%;
+}
+.state{
+    width:20%;
+}
+.zip-code{
+    width: 20%;
+}
+.expiry-date{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    width: 45%;
+}
+.expiry-date input{
+    width:40%;
+}
+.security-code{
+    width:45%
+}
+.form-button{
+    margin:20px 0px;
+    margin-bottom: 0px;
+}
+.form-button button{
+    display: block;
+    margin: auto;
+    margin-right: 0px;
+    height: 40px;
+    width:160px;
+    border-radius: 100px;
+    background-color:#C1F7D5;
+    text-align: center;
+    font: normal normal bold 15px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+}
+
+
+
+footer {
+    background-color: white;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 25% 15% 15% 15% 30%;
+    grid-template-rows: 1fr;
+}
+
+.footer-headline {
+    text-align: left;
+    font: normal normal bold 22px/28px Helvetica;
+    letter-spacing: 0px;
+    color: #354463;
+    opacity: 1;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+
+.footer-contact {
+    padding: 16px;
+    padding-top: 50px;
+}
+.footer-links {
+    padding: 16px;
+    padding-top: 50px;
+}
+
+.footer-social-links {
+    padding: 16px;
+    padding-top: 50px;
+}
+
+footer h4{
+    text-align: left;
+    font: normal normal normal 14px/17px Helvetica;
+    letter-spacing: 0.56px;
+    color: #354463;
+    opacity: 1;
+    border-bottom: 2px #354463 solid;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    text-align: left;
+    font: normal normal 300 14px/20px Helvetica;
+    letter-spacing: -0.14px;
+    color: #354463;
+    opacity: 1;
+}
+
+.footer-phrase{
+    text-align: right;
+    font-family: flood-std;
     font-size: 40px;
     padding-top: 50px;
     padding-right: 100px;
 }
 }
 
-
-
-
-@media (min-width:400px) and (max-width:800px){
-    .body {
-        display: grid;
-        grid-column: 1fr;
-        grid-row: 100px 8fr 2fr;
-        /* background-color:black; */
-        
-    }
-    
-    .header {
-        width: 100%;
-        text-align: center;
-        font: normal normal bold 22px/28px Helvetica;
-        color: #354463;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        background-color: white;
-    }
-    
-    .main {
-        display: flex;
-        justify-content: space-around;
+/* TABLET */
+@media(min-width:768px) and (max-width:1025px){
+    main{
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        
-        /* opacity: 0.63; */
-        background-size: cover;
-        /* background-attachment: fixed; */
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* background-image: url(); */
-        /* background-image: url('https://drive.google.com/file/d/1-ILfv9oWhTAUI0ZrnBZ7E6EPXlzaFKpR/view?usp=sharing'); */
-        /* background-image: url('/home/saurabh/Desktop/webpages/mobile_donation/image.png'); */
-        background-image: url('image.png');
-        padding-top: 50px;
-        padding-bottom: 50px;
+    }
+    .phrase{
+        order: -1;
+        width: 70%;
+    }
+    .form-division{
+        width: 70%;
     }
     
-    .phrase {
-        font-size: 40px;
-        font-family: flood-std;
-        color: black;
-    }
-    
-    label {
-        display: block;
-        text-align: left;
-        font: normal normal normal 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #FFFFFF;
-        opacity: 1;
-    }
-    
-    .form {
-        background-color: #354463;
-        width: 500px;
-        padding: 30px;
-        order:2;
-    }
-    
-    .form>h3 {
-        color: white;
-        text-align: left;
-        font: normal normal bold 26px/34px Helvetica;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1
-    }
-    
-    input {
-        border: none;
-        border-bottom: #C1F7D5 2px solid;
-        background-color: #354463;
-    }
-    
-    .form #first-form {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        column-gap: 30px;
-    }
-    
-    #first-form>div {
-        padding: 5px;
-    }
-    
-    #second-form>div {
-        padding: 5px;
-    }
-    
-    #ff3 {
-        width: 100%
-    }
-    
-    .ff2 {
-        grid-column: 2/4;
-    }
-    
-    .ff3 {
-        grid-column: 1/-1;
-    }
-    
-    .ff7 {
-        grid-column: 1/-1;
-    }
-    
-    button {
-        height: 40px;
-        width: 200px;
-        border-radius: 20px;
-        background-color: #C1F7D5;
-        color: black;
-        margin-top:20px;
-        margin-left: 275px;
-    }
-    
-    .footer {
-        background-color: white;
-        height: 250px;
+    footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
-        width:100%;
     }
     
-    #footer1 {
-        text-align: left;
-        font: normal normal bold 22px/28px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-        opacity: 1;
+    .footer-headline{
         padding: 50px;
         padding-left: 20px;
         grid-row: 1/-1;
     }
     
     
-    #footer2 {
+    .footer-contact{
         padding: 16px;
         padding-top: 50px;
     }
-    #footer3 {
+    .footer-links{
         padding: 16px;
         padding-top: 50px;
     }
     
-    #footer4 {
+    .footer-social-links{
         padding: 16px;
         padding-top: 50px;
     }
     
     footer h4{
-        text-align: left;
-        font: normal normal normal 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #354463;
-        opacity: 1;
-        border-bottom: 2px #354463 solid;
         margin-bottom: 10px;
         padding-bottom: 5px;
         width:50%;
     }
     
-    footer p{
-        text-align: left;
-        font: normal normal 300 14px/20px Helvetica;
-        letter-spacing: -0.14px;
-        color: #354463;
-        opacity: 1;
-    }
-    
-    #footer5 {
-        text-align: right;
-        font-family: 'Rock Salt', cursive;
-        font-family: flood-std;
-        font-size: 40px;
+    .footer-phrase{
         padding-top: 50px;
         padding-right: 50px;
     }
+
 }
 
+/* MOBILE */
 
-
-@media (max-width:399px){
-    .body {
-        display: grid;
-        grid-column: 1fr;
-        grid-row: 100px 8fr 2fr;
-        /* background-color:black; */
-    }
-    
-    .header {
-        width: 100%;
-        text-align: center;
-        font: normal normal bold 22px/28px Helvetica;
-        color: #354463;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        background-color: white;
-    }
-    
-    .main {
-        display: flex;
-        justify-content: space-around;
+@media(max-width:767px){
+    main{
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: url('image.png');
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width:100%;
     }
-    
-    .phrase {
-        font-size: 40px;
-        font-family: flood-std;
-        color: black;
+    .phrase{
+        order: -1;
+        width: 70%;
+        font-size:40px;
     }
-    
-    label {
-        display: block;
-        text-align: left;
-        font: normal normal normal 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #FFFFFF;
-        opacity: 1;
+    .form-division{
+        width: 70%;
+        padding:30px;
     }
-    
-    .form {
-        background-color: #354463;
-        /* width: 500px; */
-        width:80%;
-        padding: 30px;
-        order:2;
+
+    footer{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        padding:50px 25px;
+
     }
-    
-    .form>h3 {
-        color: white;
-        text-align: left;
-        font: normal normal bold 26px/34px Helvetica;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1
+    .footer-headline{
+        padding: 0px;
     }
-    
-    input {
-        border: none;
-        border-bottom: #C1F7D5 2px solid;
-        background-color: #354463;
+    .footer-contact{
+        padding:0px;
     }
-    
-    .form #first-form {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        column-gap: 30px;
-    }
-    
-    #first-form>div {
-        padding: 5px;
-    }
-    
-    #second-form>div {
-        padding: 5px;
-    }
-    
-    #ff3 {
-        width: 100%
-    }
-    
-    .ff2 {
-        grid-column: 2/4;
-    }
-    
-    .ff3 {
-        grid-column: 1/-1;
-    }
-    
-    .ff7 {
-        grid-column: 1/-1;
-    }
-    
-    button {
-        height: 40px;
-        width: 200px;
-        border-radius: 20px;
-        background-color: #C1F7D5;
-        color: black;
-        margin-top:20px;
-        margin-left: 275px;
-    }
-    
-    .footer {
-        background-color: white;
-        /* height: 250px; */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        width:100%;
-    }
-    
-    #footer1 {
-        text-align: left;
-        font: normal normal bold 22px/28px Helvetica;
-        letter-spacing: 0px;
-        color: #354463;
-        opacity: 1;
-        padding: 50px;
-        padding-left: 20px;
-        grid-row: 1/2;
-    }
-    
-    
-    #footer2 {
-        padding: 16px;
-        padding-top: 50px;
-    }
-    #footer3 {
-        padding: 16px;
-        padding-top: 50px;
-    }
-    
-    #footer4 {
-        padding: 16px;
-        padding-top: 50px;
-    }
-    
     footer h4{
-        text-align: left;
-        font: normal normal normal 14px/17px Helvetica;
-        letter-spacing: 0.56px;
-        color: #354463;
-        opacity: 1;
-        border-bottom: 2px #354463 solid;
         margin-bottom: 10px;
         padding-bottom: 5px;
         width:50%;
     }
-    
-    footer p{
-        text-align: left;
-        font: normal normal 300 14px/20px Helvetica;
-        letter-spacing: -0.14px;
-        color: #354463;
-        opacity: 1;
+    .footer-phrase{
+        grid-column:1/-1;
+        padding-right: 0px;
     }
-    
-    #footer5 {
-        text-align: right;
-        font-family: 'Rock Salt', cursive;
-        font-family: flood-std;
-        font-size: 40px;
-        padding-top: 50px;
-        padding-right: 50px;
-    }
-}
 
+}
