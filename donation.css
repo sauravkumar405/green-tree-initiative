@@ -106,8 +106,17 @@ main {
 .city{
     width: 45%;
 }
+
 .state{
     width:20%;
+}
+
+.state select{
+    border:none;
+    background-color: #354463;
+    border-bottom: 2px solid #C1F7D5;
+    margin-top: 10px;
+    color:lightgray;
 }
 .zip-code{
     width: 20%;
@@ -117,6 +126,10 @@ main {
     justify-content: space-between;
     margin-right: 5px;
     width: 45%;
+}
+.expiration-date{
+    width:60%;
+
 }
 .expiry-date input{
     width:40%;
