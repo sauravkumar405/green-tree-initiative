@@ -837,6 +837,7 @@ footer p{
         margin:60px auto;
         padding:20px;
         position:relative;
+        max-width: 500px;
     }
     .dummy-img{
         height: 176px;
@@ -846,15 +847,13 @@ footer p{
         position:absolute;
         top:-30px;
         height: 176px;
-        background-color: aqua;
-        
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
     .cards-img1{
         background-image: url('home/tree-planting.png');
-        background-image: url('/home/saurabh/Desktop/webpages/green-tree-initiative-home-page/home/tree-planting.png');
+        /* background-image: url('/home/saurabh/Desktop/webpages/green-tree-initiative-home-page/home/tree-planting.png'); */
     }
     .cards-img2{
         background-image: url('home/education-training.png');
@@ -933,18 +932,20 @@ footer p{
         padding:25px;
         row-gap: 10px;
         margin:20px auto;
+        
     }
     .do-you-know-popup{
         position:relative;
+        
     }
-    #do-you-know{
+    .do-you-know{
         background: #354463 0% 0% no-repeat padding-box;
         opacity: 1;
         height: 25px;
         width:160px;
         position:absolute;
         top:-15px;
-        left:24%;
+        left:28%;
         text-align: center;
         font: normal normal normal 14px/17px Helvetica;
         letter-spacing: 0.56px;
@@ -952,6 +953,8 @@ footer p{
         opacity: 1;
         padding-top:10px;
     }
+
+
     .stats-heading{
         text-align: left;
         font: normal normal bold 22px/28px Helvetica;
@@ -1285,6 +1288,9 @@ footer p{
         background-color: white;
         margin:50px auto;
         margin-top: 0px;
+        border:green 2px solid;
+        position:relative;
+        padding-top: 50px;
     }
     .the-issue-popup{
         width:160px;
@@ -1293,8 +1299,9 @@ footer p{
         color: white;
         text-align: center;
         margin: auto;
-        position: relative;
-        top:-6%;
+        position: absolute;
+        top:-10%;
+        left: 35%;
         padding-top:15px;
     }
     .issue-headline{
@@ -1343,9 +1350,6 @@ footer p{
 
 
 
-
-
-
     /* SECTION3 */
 
     .what-we-do-section{
@@ -1354,9 +1358,9 @@ footer p{
     }
     .what-we-do-popup{
         width:160px;
-        height:40px;
+        height:30px;
         background-color: #f6f6f6;
-        padding:auto;
+        padding-top:13px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -1383,7 +1387,6 @@ footer p{
         margin-top: 40px;
         margin-bottom: 40px;
         padding-bottom: 20px;
-        /* width:auto; */
         width: 640px;
         margin: 30px auto;
 
@@ -1396,9 +1399,7 @@ footer p{
     .cards-img{
         width:288px;
         height:201px;
-        background-color: black;
         position: absolute;
-        /* left:20%; */
         right: 50%;
         top:-40px;
     }
@@ -1422,6 +1423,9 @@ footer p{
     }
     .cards-img1{
         background-image: url('home/tree-planting.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .cards-img2{
         background-image: url('home/education-training.png');
@@ -1497,6 +1501,7 @@ footer p{
         padding:40px;
         row-gap: 10px;
         margin:20px auto;
+        max-width: 450px;
     }
 
     .stats-para{
